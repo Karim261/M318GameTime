@@ -3,10 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace M318GameTime.ViewModels
 {
-    /// <summary>
-    /// Main controller.
-    /// </summary>
-    /// <seealso cref="M318GameTime.ViewModels.BaseINotify" />
+    
     public class MainViewModel : BaseINotify
     {
         public const string defaultJeuxImage = "/M318GameTime;component/Images/default.jpg";
@@ -16,10 +13,7 @@ namespace M318GameTime.ViewModels
         public ReadOnlyObservableCollection<Game> GamesCollection;
         public ReadOnlyObservableCollection<User> UsersCollection;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MainViewModel"/> class.
-        /// </summary>
-        /// <param name="gameLibrary">The music library.</param>
+      
         public MainViewModel(GameLibrary gameLibrary, UserLibrary userLibrary)
         {
             this.gameLibrary = gameLibrary;
@@ -75,10 +69,7 @@ namespace M318GameTime.ViewModels
 
 
         #region CRUD Methods
-        /// <summary>
-        /// Adds the game. Shows error messages if game does not contain either an artist name OR an game name.
-        /// </summary>
-        /// <param name="gameToAdd">The game to add.</param>
+      
         public void AddGame(Game gameToAdd)
         {
             this.gameLibrary.GamesCollection.Add(gameToAdd);
@@ -88,10 +79,7 @@ namespace M318GameTime.ViewModels
         {
             this.userLibrary.UsersCollection.Add(userToAdd);
         }
-        /// <summary>
-        /// Removes the game.
-        /// </summary>
-        /// <param name="gameToRemove">The game to remove.</param>
+    
         public void RemoveGame(Game gameToRemove)
         {
             this.gameLibrary.GamesCollection.Remove(gameToRemove);

@@ -25,12 +25,6 @@ namespace M318GameTime.Commands
             return true;
         }
 
-        /// <summary>
-        /// Defines the method to be called when the command is invoked.
-        /// New game (newGame) is created that contains existing game name, existing artist name, and the newly cleared (nulled) game cover path. newGame
-        /// is added to the ObservableCollection and old game SelectedItem is removed. ComboBox SelectedItem is then set to newGame to change focus.
-        /// </summary>
-        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
         public void Execute(object parameter)
         {
             if (CanExecute(parameter) == false)

@@ -8,55 +8,32 @@ using System.Windows.Input;
 
 namespace M318GameTime.ViewModels
 {
-    /// <summary>
-    /// ViewModel for UpdateorDeleteView.
-    /// </summary>
-    /// <seealso cref="M318GameTime.ViewModels.BaseINotify" />
+   
     public class UpdateOrDeleteViewModel : BaseINotify, IDisposable
     {
         #region Commands
-        /// <summary>
-        /// Gets or sets the remove game command.
-        /// </summary>
-        /// <value>
-        /// The remove game command.
-        /// </value>
+    
         public ICommand RemoveGameCommand
         {
             get;
             private set;
         }
 
-        /// <summary>
-        /// Gets or sets the update game name command.
-        /// </summary>
-        /// <value>
-        /// The update game name command.
-        /// </value>
+     
         public UpdateJeuxNomCommand UpdateJeuxNomCommand
         {
             get;
             private set;
         }
 
-        /// <summary>
-        /// Gets or sets the update artist name command.
-        /// </summary>
-        /// <value>
-        /// The update artist name command.
-        /// </value>
+      
         public UpdateJeuxDescriptionCommand UpdateJeuxDescriptionCommand
         {
             get;
             private set;
         }
 
-        /// <summary>
-        /// Gets or sets the browse update game cover path command.
-        /// </summary>
-        /// <value>
-        /// The browse update game cover path command.
-        /// </value>
+   
         public BrowseUpdateJeuxImageCommand BrowseUpdateJeuxImageCommand
         {
             get;
@@ -95,12 +72,7 @@ namespace M318GameTime.ViewModels
 
         
 
-        /// <summary>
-        /// Gets or sets the clear game cover command.
-        /// </summary>
-        /// <value>
-        /// The clear game cover command.
-        /// </value>
+  
         public ClearUpdateJeuxImageCommand ClearUpdateJeuxImageCommand
         {
             get;
@@ -108,12 +80,7 @@ namespace M318GameTime.ViewModels
         }
         #endregion
 
-        /// <summary>
-        /// Gets the new games collection.
-        /// </summary>
-        /// <value>
-        /// The new games collection.
-        /// </value>
+       
         public ReadOnlyObservableCollection<Game> NewGamesCollection
         {
             get
@@ -123,13 +90,7 @@ namespace M318GameTime.ViewModels
         }
 
         #region NewGame Properties
-        /// <summary>
-        /// Gets or sets the new name of the game, notifies of property changed.
-        /// Rest of the properties work identically.
-        /// </summary>
-        /// <value>
-        /// The new name of the game.
-        /// </value>
+  
         public string NewJeuxNom
         {
             get
@@ -346,9 +307,7 @@ namespace M318GameTime.ViewModels
         #endregion
 
         #region UpdateOrDeleteViewModel Constructor
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateOrDeleteViewModel"/> class.
-        /// </summary>
+   
         public UpdateOrDeleteViewModel()
         {
             this.RemoveGameCommand = new RemoveGameCommand();
@@ -374,21 +333,12 @@ namespace M318GameTime.ViewModels
         #endregion
 
         #region PropertyChanged Methods
-        /// <summary>
-        /// On controller property changed, calls NotifyPropertyChanged on PropertyName.
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="PropertyChangedEventArgs"/> instance containing the event data.</param>
         void onControllerPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             this.NotifyPropertyChanged(e.PropertyName);
         }
 
-        /// <summary>
-        /// On GameAdded for UpdateJeuxDescription, clears the UpdatedJeuxDescription textbox.
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        
         void onUpdateJeuxDescriptionCommandGameAdded(object sender, EventArgs e)
         {
             UpdatedJeuxDescription = string.Empty;
@@ -420,11 +370,7 @@ namespace M318GameTime.ViewModels
         }
 
 
-        /// <summary>
-        /// On GameAdded for UpdateJeuxNom, clears the UpdatedJeuxNom textbox.
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+  
         void onUpdateJeuxNomCommandGameAdded(object sender, EventArgs e)
         {
             UpdatedJeuxNom = string.Empty;

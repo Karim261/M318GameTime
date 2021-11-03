@@ -3,19 +3,11 @@ using System.Windows.Input;
 
 namespace M318GameTime.ViewModels
 {
-    /// <summary>
-    /// ViewModel for MainWindow.
-    /// </summary>
-    /// <seealso cref="M318GameTime.ViewModels.BaseINotify" />
+
     public class MainWindowViewModel : BaseINotify
     {
         #region Commands
-        /// <summary>
-        /// Gets the open add command.
-        /// </summary>
-        /// <value>
-        /// The open add command.
-        /// </value>
+     
         public ICommand OpenAddCommand
         {
             get;
@@ -27,12 +19,7 @@ namespace M318GameTime.ViewModels
             get;
             private set;
         }
-        /// <summary>
-        /// Gets the open view command.
-        /// </summary>
-        /// <value>
-        /// The open view command.
-        /// </value>
+       
         public ICommand OpenViewCommand
         {
             get;
@@ -48,9 +35,7 @@ namespace M318GameTime.ViewModels
         #endregion
 
         #region MainWindowViewModel Constructor
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MainWindowViewModel"/> class.
-        /// </summary>
+  
         public MainWindowViewModel()
         {
             this.OpenAddCommand = new OpenAddCommand();

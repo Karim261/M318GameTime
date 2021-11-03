@@ -7,13 +7,11 @@ using System.Windows.Input;
 
 namespace M318GameTime.Commands
 {
-    /// <summary>
+
 
     public class OpenAddUserCommand : ICommand
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="OpenAddCommand"/> class.
-        /// </summary>
+
         public OpenAddUserCommand()
         {
         }
