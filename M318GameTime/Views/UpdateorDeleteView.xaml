@@ -139,7 +139,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <TextBox x:Name="JeuxDateUpdateTextBox"
+                <DatePicker x:Name="JeuxDateUpdateTextBox"
                     Grid.Column="0"
                     Grid.Row="0"
                     Margin="10"

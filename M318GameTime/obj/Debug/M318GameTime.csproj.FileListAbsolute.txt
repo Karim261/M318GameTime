@@ -24,3 +24,29 @@ C:\Users\karim\source\repos\M318GameTime\M318GameTime\obj\Debug\M318GameTime.csp
 C:\Users\karim\source\repos\M318GameTime\M318GameTime\obj\Debug\M318GameTime.csproj.CoreCompileInputs.cache
 C:\Users\karim\source\repos\M318GameTime\M318GameTime\obj\Debug\M318GameTime.exe
 C:\Users\karim\source\repos\M318GameTime\M318GameTime\obj\Debug\M318GameTime.pdb
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\bin\Debug\M318GameTime.exe.config
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\bin\Debug\M318GameTime.exe
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\bin\Debug\M318GameTime.pdb
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\M318GameTime.csproj.AssemblyReference.cache
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\AddGameView.g.cs
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\AddUserView.g.cs
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\LoginView.g.cs
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\MainWindow.g.cs
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\UpdateorDeleteUserView.g.cs
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\UpdateorDeleteView.g.cs
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\App.g.cs
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\M318GameTime_MarkupCompile.cache
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\M318GameTime_MarkupCompile.lref
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\AddGameView.baml
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\AddUserView.baml
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\LoginView.baml
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\MainWindow.baml
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\UpdateorDeleteUserView.baml
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\Views\UpdateorDeleteView.baml
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\M318GameTime.g.resources
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\M318GameTime.Properties.Resources.resources
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\M318GameTime.csproj.GenerateResource.cache
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\M318GameTime.csproj.CoreCompileInputs.cache
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\M318GameTime.exe
+C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\obj\Debug\M318GameTime.pdb
