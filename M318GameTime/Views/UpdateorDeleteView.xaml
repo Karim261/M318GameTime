@@ -3,11 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:M318GameTime.ViewModels"
         ResizeMode="CanMinimize"
-        Title="UpdateorDeleteView" Height="950.675" Width="800">
+        Title="UpdateorDeleteView" Height="772.675" Width="1145">
     <!--<Window.DataContext>
         <local:UpdateorDeleteViewModel />
     </Window.DataContext>-->
-    <Grid Name="UpdateorDeleteGrid" Height="921" VerticalAlignment="Top">
+    <Grid Name="UpdateorDeleteGrid" Margin="-1,0,21,42">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="14" />
             <ColumnDefinition Width="93"/>
@@ -35,8 +35,8 @@
 
         <Label Grid.Column="0"
                Grid.Row="1"
-               Margin="10"
-               Content="Select to View:" Grid.ColumnSpan="2" />
+               Margin="10,10,674,10"
+               Content="Select to View:" Grid.ColumnSpan="3" />
         <Label Grid.Column="0"
                Grid.Row="2"
                Margin="10"
@@ -47,13 +47,13 @@
                Content="Description:" Grid.ColumnSpan="2" />
         <Label
                Grid.Row="8"
-               Margin="0,443,20,-511"
-               Content="Game Cover:" Grid.ColumnSpan="2" />
+               Margin="1,222,1007,-208"
+               Content="Game Cover:" Grid.ColumnSpan="2" Grid.Column="1" />
 
         <ComboBox Name="gameComboBox"
                   Grid.Column="2"
                   Grid.Row="1"
-                  Margin="10,20,10,0"
+                  Margin="28,12,575,8"
                   ItemsSource="{Binding Path=NewGamesCollection}"
                   SelectedItem="{Binding Path=SelectedItem, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                   IsSynchronizedWithCurrentItem="True"
@@ -65,13 +65,13 @@
         <TextBox Name="jeuxNomTextBox"
                  Grid.Column="2"
                  Grid.Row="2"
-                 Margin="10"
+                 Margin="28,10,575,10"
                  IsEnabled="False"
                  Text="{Binding ElementName=gameComboBox, Path=SelectedItem.JeuxNom, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
 
         <Grid Name="Update1Grid"
               Grid.Column="2"
-              Grid.Row="3">
+              Grid.Row="3" Margin="0,0,575,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="175*" />
                 <ColumnDefinition Width="432*"/>
@@ -83,12 +83,12 @@
             <TextBox Name="jeuxNomUpdateTextBox"
                      Grid.Column="0"
                      Grid.Row="0"
-                     Margin="10"
+                     Margin="29,6,10,4"
                      Text="{Binding Path=UpdatedJeuxNom, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.ColumnSpan="2" />
             <Button Name="jeuxNomUpdateBtn"
                     Grid.Column="2"
                     Grid.Row="0"
-                    Margin="10"
+                    Margin="19,7,1,7"
                     Width="60"
                     Content="Update"
                     Command="{Binding Path=UpdateJeuxNomCommand}" />
@@ -97,7 +97,7 @@
         <TextBox Name="JeuxDescriptionTextBox"
                  Grid.Column="2"
                  Grid.Row="4"
-                 Margin="10"
+                 Margin="28,10,575,10"
                  IsEnabled="False"
                  Text="{Binding ElementName=gameComboBox, Path=SelectedItem.JeuxDescription, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
 
@@ -105,7 +105,8 @@
               Grid.Column="2"
               Grid.Row="5">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
+                <ColumnDefinition Width="139*" />
+                <ColumnDefinition Width="90*"/>
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
@@ -114,26 +115,26 @@
             <TextBox Name="JeuxDescriptionUpdateTextBox"
                      Grid.Column="0"
                      Grid.Row="0"
-                     Margin="10"
+                     Margin="31,6,263,38"
                      Text="{Binding Path=UpdatedJeuxDescription, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
             <Button Name="JeuxDescriptionUpdateBtn"
-                    Grid.Column="1"
                     Grid.Row="0"
-                    Margin="10"
-                    Width="60"
+                    Margin="372,9,178,39"
                     Content="Update"
                     Command="{Binding Path=UpdateJeuxDescriptionCommand}" />
             <Label Grid.Column="0"
-                Margin="-98,46,592,-26"
+                Margin="-98,46,322,-26"
                 Content="Date de sorite:" />
             <TextBox x:Name="JeuxDateTextBox"
-                Margin="9,46,11,-26"
+                Margin="30,52,178,-4"
                 IsEnabled="False"
                 Text="{Binding ElementName=gameComboBox, Path=SelectedItem.JeuxDate, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
             <Grid x:Name="Update2Grid_Copy"
         Grid.ColumnSpan="2" Margin="-1,83,1,-77">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
+                    <ColumnDefinition Width="552*" />
+                    <ColumnDefinition Width="13*"/>
+                    <ColumnDefinition Width="449*"/>
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
@@ -142,25 +143,22 @@
                 <DatePicker x:Name="JeuxDateUpdateTextBox"
                     Grid.Column="0"
                     Grid.Row="0"
-                    Margin="10"
+                    Margin="31,10,210,18"
                     Text="{Binding Path=UpdatedJeuxDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <Button x:Name="JeuxDateBtn"
-                    Grid.Column="1"
                     Grid.Row="0"
-                    Margin="10"
-                    Width="60"
+                    Margin="373,16,115,18"
                     Content="Update"
                     Command="{Binding UpdateJeuxDateCommand}" />
             </Grid>
             <Label Grid.Column="0"
-                Margin="-98,126,592,-106"
+                Margin="-98,126,322,-106"
                 Content="Genre:" />
             <TextBox x:Name="JeuxGenreTextBox"
-                Margin="9,126,11,-106"
+                Margin="31,132,178,-82"
                 IsEnabled="False"
                 Text="{Binding ElementName=gameComboBox, Path=SelectedItem.JeuxGenre, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
-            <Grid x:Name="Update2Grid_Copy1"
-                Grid.ColumnSpan="2" Margin="-1,163,1,-157">
+            <Grid x:Name="Update2Grid_Copy1" Margin="-1,163,178,-157">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition Width="Auto" />
@@ -171,25 +169,24 @@
                 <TextBox x:Name="JeuxGenreUpdateTextBox"
                     Grid.Column="0"
                     Grid.Row="0"
-                    Margin="10"
+                    Margin="32,10,10,10"
                     Text="{Binding Path=UpdatedJeuxGenre, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <Button x:Name="JeuxGenreUpdateBtn"
                     Grid.Column="1"
                     Grid.Row="0"
-                    Margin="10"
+                    Margin="19,10,1,10"
                     Width="60"
                     Content="Update"
                     Command="{Binding UpdateJeuxGenreCommand}" />
             </Grid>
             <Label Grid.Column="0"
-                Margin="-98,210,592,-190"
+                Margin="-98,210,616,-190"
                 Content="PEGI:" />
             <TextBox x:Name="JeuxPEGITextBox"
-                Margin="9,210,11,-190"
+                Margin="30,210,178,-157"
                 IsEnabled="False"
                 Text="{Binding ElementName=gameComboBox, Path=SelectedItem.JeuxPEGI, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
-            <Grid x:Name="Update2Grid_Copy2"
-                Grid.ColumnSpan="2" Margin="-1,247,1,-241">
+            <Grid x:Name="Update2Grid_Copy2" Margin="8,247,169,-241">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition Width="Auto" />
@@ -200,7 +197,7 @@
                 <TextBox x:Name="JeuxPEGIUpdateTextBox"
                     Grid.Column="0"
                     Grid.Row="0"
-                    Margin="10"
+                    Margin="23,10,10,10"
                     Text="{Binding Path=UpdatedJeuxPEGI, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <Button x:Name="JeuxPEGIUpdateBtn"
                     Grid.Column="1"
@@ -211,14 +208,13 @@
                     Command="{Binding UpdateJeuxPEGICommand}" />
             </Grid>
             <Label Grid.Column="0"
-                Margin="-98,295,592,-275"
+                Margin="482,124,9,-83"
                 Content="Platforme:" />
             <TextBox x:Name="JeuxPlatformeTextBox"
-                Margin="9,295,11,-275"
+                Margin="608,124,0,-79"
                 IsEnabled="False"
-                Text="{Binding ElementName=gameComboBox, Path=SelectedItem.JeuxPlatforme, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
-            <Grid x:Name="Update2Grid_Copy3"
-                Grid.ColumnSpan="2" Margin="-1,332,1,-326">
+                Text="{Binding ElementName=gameComboBox, Path=SelectedItem.JeuxPlatforme, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.ColumnSpan="2" />
+            <Grid x:Name="Update2Grid_Copy3" Margin="576,165,0,-159" Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition Width="Auto" />
@@ -229,95 +225,95 @@
                 <TextBox x:Name="JeuxPlatformeUpdateTextBox"
                     Grid.Column="0"
                     Grid.Row="0"
-                    Margin="10"
+                    Margin="33,6,10,14"
                     Text="{Binding Path=UpdatedJeuxPlatforme, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <Button x:Name="JeuxPlatformeUpdateBtn"
                     Grid.Column="1"
                     Grid.Row="0"
-                    Margin="10"
+                    Margin="18,6,2,14"
                     Width="60"
                     Content="Update"
                     Command="{Binding UpdateJeuxPlatformeCommand}" />
             </Grid>
             <Label Grid.Column="0"
-                Margin="-98,382,592,-362"
-                Content="Version de pays:" />
+                Margin="479,211,144,-191"
+                Content="Version de pays:" Grid.ColumnSpan="2" />
             <TextBox x:Name="JeuxVersionTextBox"
-                Margin="9,382,11,-362"
+                Margin="608,211,0,-167"
                 IsEnabled="False"
-                Text="{Binding ElementName=gameComboBox, Path=SelectedItem.JeuxVersion, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
-            <Grid x:Name="Update2Grid_Copy4"
-                Grid.ColumnSpan="2" Margin="-1,419,1,-413">
+                Text="{Binding ElementName=gameComboBox, Path=SelectedItem.JeuxVersion, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.ColumnSpan="2" />
+            <Grid x:Name="Update2Grid_Copy4" Margin="576,252,0,-228" Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
+                    <ColumnDefinition Width="75*" />
+                    <ColumnDefinition Width="283*"/>
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="21.333" />
+                    <RowDefinition Height="23.667"/>
                 </Grid.RowDefinitions>
                 <TextBox x:Name="JeuxVersionUpdateTextBox"
                     Grid.Column="0"
                     Grid.Row="0"
-                    Margin="10"
-                    Text="{Binding Path=UpdatedJeuxVersion, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    Margin="31,6,10,14"
+                    Text="{Binding Path=UpdatedJeuxVersion, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" Grid.RowSpan="2" />
                 <Button x:Name="JeuxVersionUpdateBtn"
-                    Grid.Column="1"
+                    Grid.Column="2"
                     Grid.Row="0"
-                    Margin="10"
+                    Margin="18,6,2,14"
                     Width="60"
                     Content="Update"
-                    Command="{Binding UpdateJeuxVersionCommand}" />
+                    Command="{Binding UpdateJeuxVersionCommand}" Grid.RowSpan="2" />
             </Grid>
         </Grid>
 
         <Grid Name="imageGrid"
-              Grid.Column="1"
-              Grid.Row="8" Margin="83,433,10,-485" Grid.ColumnSpan="2">
+              Grid.Column="2"
+              Grid.Row="8" Margin="6,204,0,-262">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition Width="503*" />
+                <ColumnDefinition Width="481*" />
+                <ColumnDefinition Width="22*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="59*" />
+                <RowDefinition Height="62" />
                 <RowDefinition Height="0*" />
-                <RowDefinition Height="40*" />
+                <RowDefinition />
             </Grid.RowDefinitions>
-            <Image Name="gameCoverImage" 
-                   Grid.ColumnSpan="2"
-                   Grid.Column="0"
+            <Image Name="gameCoverImage"
+                   Grid.Column="1"
                    Grid.Row="0"
-                   Margin="268,10,269,10"
+                   Margin="107,-479,60,298"
                    Source="{Binding ElementName=gameComboBox, Path=SelectedItem.JeuxImage, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
-            <TextBox Name="showCoverPath"
-                     Grid.Column="0"
-                     Grid.ColumnSpan="2"
-                     Grid.Row="1"
-                     Margin="10"
-                     IsEnabled="False"
-                     Text="{Binding Path=SelectedItem.JeuxImage, UpdateSourceTrigger=PropertyChanged}" />
+            <StackPanel Grid.ColumnSpan="3" Margin="25,18,10,20" Orientation="Vertical">
+                <TextBox x:Name="showCoverPath"
+                    IsEnabled="False"
+                    Text="{Binding SelectedItem.JeuxImage, UpdateSourceTrigger=PropertyChanged}" Height="22" RenderTransformOrigin="0.505,-0.696" Margin="0,0,-9,0" />
+
+            </StackPanel>
 
             <Button Name="gameCoverBrowseBtn"
                     Grid.Column="0"
                     Grid.Row="2"
-                    Margin="132,10"
+                    Margin="92,0,172,20"
                     Content="Browse..."
                     Command="{Binding BrowseUpdateJeuxImageCommand}" />
             <Button Name="clearGameCoverBtn"
                     Grid.Column="1"
                     Grid.Row="2"
-                    Margin="132,10,131,10"
+                    Margin="201,6,40,14"
                     Content="Clear"
                     Command="{Binding ClearUpdateGameCoverCommand}" />
 
         </Grid>
 
-        <Button Grid.ColumnSpan="3"
+        <Button
                 Grid.Row="8" 
                 HorizontalAlignment="Stretch"
-                Margin="10,541,10,-521"
+                Margin="371,346,362,-326"
                 Content="Delete Game"
                 
-                Command="{Binding Path=RemoveGameCommand}" />
+                Command="{Binding Path=RemoveGameCommand}" Grid.Column="2" />
 
 
 

@@ -110,19 +110,21 @@
 
             <TextBox x:Name="showCoverPath"
                 IsEnabled="False"
-                Text="{Binding NewJeuxImage}" Margin="10,0" Height="23" />
+                Text="{Binding NewJeuxImage}" Margin="10,0,28,0" Height="23" />
             <StackPanel Margin="26,0,773,0" Orientation="Vertical">
-                <DockPanel Height="24">
+                <DockPanel Height="24" Margin="0,0,-87,0">
                     <Button x:Name="addGameCoverBrowseBtn"
                         Content="Browse..."
-                        Command="{Binding BrowseNewJeuxImageCommand}" Width="96" Margin="0,4,0,-4" />
+                        Command="{Binding BrowseNewJeuxImageCommand}" Width="108" Margin="0,4,0,-4" />
                 </DockPanel>
             </StackPanel>
             <StackPanel Margin="796,0,10,0" Orientation="Vertical">
-                <DockPanel Height="24">
-                    <Button x:Name="clearGameCoverBtn"
-                        Content="Clear"
-                        Command="{Binding ClearNewGameCoverCommand}" RenderTransformOrigin="0.244,2.875" Width="87" Margin="0,-18,0,18" />
+                <DockPanel Height="24" Margin="-55,0,0,0">
+                    <StackPanel Margin="0,-18,0,18" Orientation="Vertical" Width="81">
+                        <Button x:Name="clearGameCoverBtn"
+                            Content="Clear"
+                            Command="{Binding ClearNewGameCoverCommand}" RenderTransformOrigin="0.244,2.875" Height="24" />
+                    </StackPanel>
                 </DockPanel>
             </StackPanel>
         </StackPanel>
@@ -147,7 +149,7 @@
             Margin="336,37,450,166"
             Content="Historique:" />
         <ComboBox Grid.Column="1" 
-                  HorizontalAlignment="Left" Margin="433,41,0,0" Grid.Row="4" VerticalAlignment="Top" Width="440">
+                  HorizontalAlignment="Left" Margin="433,41,0,0" Grid.Row="4" VerticalAlignment="Top" Width="431">
             <ListBoxItem/>
             <ListBoxItem/>
             <ListBoxItem/>
