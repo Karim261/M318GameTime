@@ -2,9 +2,7 @@
 
 namespace M318GameTime.Models
 {
-    /// <summary>
-    /// Game model.
-    /// </summary>
+ 
     public class Game
     {
         #region Game Variables
@@ -20,13 +18,7 @@ namespace M318GameTime.Models
         #endregion
 
         #region Game Properties
-        /// <summary>
-        /// Gets or sets the name of the game.
-        /// Rest of properties work identically.
-        /// </summary>
-        /// <value>
-        /// The name of the game.
-        /// </value>
+   
         public string JeuxNom
         {
             get { return jeuxNom; }
@@ -125,12 +117,7 @@ namespace M318GameTime.Models
         #endregion
 
         #region Game Constructor
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Game"/> class.
-        /// </summary>
-        /// <param name="jeuxNom">Name of the game.</param>
-        /// <param name="JeuxDescription">Name of the artist.</param>
-        /// <param name="jeuxImage">The game cover path.</param>
+
         public Game(string jeuxNom, string jeuxDescription, string jeuxImage, string jeuxGenre, string jeuxDate, string jeuxPEGI, string jeuxPlatforme, string jeuxVersion)
         {
             this.jeuxNom = jeuxNom;
@@ -143,10 +130,7 @@ namespace M318GameTime.Models
             this.jeuxVersion = jeuxVersion;
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Game"/> class.
-        /// This is a paramterless constructor for the XML serializer.
-        /// </summary>
+      
         public Game()
         {
 

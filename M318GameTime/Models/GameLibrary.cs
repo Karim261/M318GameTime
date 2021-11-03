@@ -5,17 +5,13 @@ using System.Xml.Serialization;
 
 namespace M318GameTime.Models
 {
-    /// <summary>
-    /// GameLibrary model.
-    /// </summary>
+
     public class GameLibrary
     {
         private string userLibraryFileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "UserLibrary_M318GameTime.xml");
 
         #region GameLibrary Constructor
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GameLibrary"/> class.
-        /// </summary>
+
         public GameLibrary()
         {
 
@@ -25,12 +21,7 @@ namespace M318GameTime.Models
         #region ObservableCollection of Games
         private ObservableCollection<Game> gamesCollection = new ObservableCollection<Game>();
 
-        /// <summary>
-        /// Gets the games collection.
-        /// </summary>
-        /// <value>
-        /// The games collection.
-        /// </value>
+
         public ObservableCollection<Game> GamesCollection
         {
             get
@@ -39,9 +30,7 @@ namespace M318GameTime.Models
             }
         }
 
-        /// <summary>
-        /// Loads pre-created games (for demonstration purposes; this method and associated images can be removed).
-        /// </summary>
+      
         public void LoadGames()
         {
             GamesCollection.Add(new Game("If You're Reading This It's Too Late", "Drake", "/M318GameTime;component/Images/ifyourereadingthisitstoolate.jpg","01.01.01", "test", "test", "test", "test"));
@@ -51,9 +40,7 @@ namespace M318GameTime.Models
             GamesCollection.Add(new Game("You're Gonna Miss It All", "Modern Baseball", "/M318GameTime;component/Images/youregonnamissitall.jpg", "01.01.01", "test", "test", "test", "test"));
         }
 
-        /// <summary>
-        /// Loads user library of games from the XML file.
-        /// </summary>
+        
         public void Load()
         {
             //if (File.Exists(userLibraryFileName))
@@ -72,9 +59,7 @@ namespace M318GameTime.Models
             //}
         }
 
-        /// <summary>
-        /// Saves user library of games to the XML file.
-        /// </summary>
+       
         public void Save()
         {
             XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Game>));

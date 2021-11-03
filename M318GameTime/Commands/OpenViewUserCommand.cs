@@ -35,8 +35,8 @@ namespace M318GameTime.Commands
             newUpdateOrDeleteUserViewModel.Dispose();
         }
 
-#pragma warning disable 67
+
         public event EventHandler CanExecuteChanged;
-#pragma warning restore 67
+
     }
 }
