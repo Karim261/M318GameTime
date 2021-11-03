@@ -10,7 +10,7 @@
 
     </Window.DataContext>
     <Grid Name="MainMenu">
-        <StackPanel Margin="-114,0,-130,0">
+        <StackPanel Margin="-332,0,-356,0">
             <TextBlock Margin="10"
                        HorizontalAlignment="Center"
                        FontSize="20"

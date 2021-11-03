@@ -53,6 +53,7 @@ C:\Users\karim\Documents\Cour inter\M318\ExamFinal\M318GameTimeeee\M318GameTime\
 C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\bin\Debug\M318GameTime.exe.config
 C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\bin\Debug\M318GameTime.exe
 C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\bin\Debug\M318GameTime.pdb
+C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\obj\Debug\M318GameTime.csproj.AssemblyReference.cache
 C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\obj\Debug\Views\AddGameView.g.cs
 C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\obj\Debug\Views\AddUserView.g.cs
 C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\obj\Debug\Views\LoginView.g.cs

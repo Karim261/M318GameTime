@@ -170,11 +170,6 @@
   <ItemGroup>
     <Resource Include="Images\default.jpg" />
     <Resource Include="Images\icon.png" />
-    <Resource Include="Images\ifyourereadingthisitstoolate.jpg" />
-    <Resource Include="Images\indefenseofthegenre.jpg" />
-    <Resource Include="Images\ineveningair.jpg" />
-    <Resource Include="Images\picaresque.jpg" />
-    <Resource Include="Images\youregonnamissitall.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
