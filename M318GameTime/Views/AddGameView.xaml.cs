@@ -1,5 +1,7 @@
 ﻿using M318GameTime.ViewModels;
 using System.Windows;
+using System.Collections.Generic; 
+
 
 namespace M318GameTime.Views
 {
@@ -9,16 +11,15 @@ namespace M318GameTime.Views
     /// <seealso cref="System.Windows.Window" />
     public partial class AddGameView : Window
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="AddGameView"/> class.
-        /// </summary>
         public AddGameView()
         {
             InitializeComponent();
 
             AddGameViewModel viewModel = new AddGameViewModel();
             this.DataContext = viewModel;
+
         }
+
 
         private void addGameBtn_Click(object sender, RoutedEventArgs e)
         {

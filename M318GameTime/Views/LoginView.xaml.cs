@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using M318GameTime.ViewModels;
+using M318GameTime.Models;
+
 
 namespace M318GameTime.Views
 {
@@ -31,15 +33,18 @@ namespace M318GameTime.Views
 
         private void goToMainWindowBtn_Click(object sender, RoutedEventArgs e)
         {
+            var test = ProfiPasseTextBox.Text;
+
+            UserLibrary ul = new UserLibrary();
+            List<User> calledList = ul.GetList().ToList();
+
+            
+
             if ("admin" == ProfiPasseTextBox.Text && "admin" == ProfilsMotPasseTextBox.Text) { 
                 MainWindow window = new MainWindow();
                 window.Show();
             }
-            else if (m.NewProfilsPseudo == ProfiPasseTextBox.Text && m.NewProfilsMotPasse == ProfilsMotPasseTextBox.Text)
-            {
-                MainWindow window = new MainWindow();
-                window.Show();
-            }
+            
             else
             {
                 string message = "Simple MessageBox";

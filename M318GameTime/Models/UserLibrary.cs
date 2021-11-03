@@ -19,6 +19,11 @@ namespace M318GameTime.Models
         // ObservableCollection of Users
         private ObservableCollection<User> usersCollection = new ObservableCollection<User>();
 
+        public ObservableCollection<User> GetList()
+        {
+            return usersCollection;
+        }
+
         public ObservableCollection<User> UsersCollection
         {
             get

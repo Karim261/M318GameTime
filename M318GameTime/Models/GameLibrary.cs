@@ -21,7 +21,6 @@ namespace M318GameTime.Models
         #region ObservableCollection of Games
         private ObservableCollection<Game> gamesCollection = new ObservableCollection<Game>();
 
-
         public ObservableCollection<Game> GamesCollection
         {
             get
