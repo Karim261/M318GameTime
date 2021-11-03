@@ -15,9 +15,6 @@ using M318GameTime.ViewModels;
 
 namespace M318GameTime.Views
 {
-    /// <summary>
-    /// Interaction logic for LoginView.xaml
-    /// </summary>
     public partial class LoginView : Window
     {
         public LoginView()
@@ -46,6 +43,7 @@ namespace M318GameTime.Views
                 string title = "Title";
                 MessageBox.Show(message, title);
             }
+
         }
     }
 }
