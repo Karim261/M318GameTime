@@ -10,7 +10,7 @@
 
     </Window.DataContext>
     <Grid Name="MainMenu">
-        <StackPanel Margin="-114,0,-130,0">
+        <StackPanel Margin="-332,0,-356,0">
             <TextBlock Margin="10"
                        HorizontalAlignment="Center"
                        FontSize="20"
@@ -42,6 +42,12 @@
                 HorizontalAlignment="Center"
                 Content="View User Collection"
                 Command="{Binding OpenViewUserCommand}" Click="ViewUserWindowBtn_Click"/>
+            <Button x:Name="AddRelationsBtn"
+                Width="168"
+                Margin="681,10,633,10"
+                HorizontalAlignment="Center"
+                Content="Add Relations"
+                Command="" Click="AddRelationsBtn_Click" />
         </StackPanel>
     </Grid>
 </Window>

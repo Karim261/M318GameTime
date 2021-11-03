@@ -7,10 +7,7 @@ using System.ComponentModel;
 
 namespace M318GameTime.ViewModels
 {
-    /// <summary>
-    /// AddGame ViewModel.
-    /// </summary>
-    /// <seealso cref="M318GameTime.ViewModels.BaseINotify" />
+  
     public class AddGameViewModel : BaseINotify, IDisposable
     {
         #region Commands

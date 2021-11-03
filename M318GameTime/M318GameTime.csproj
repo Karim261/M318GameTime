@@ -116,6 +116,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Views\UserGameView.xaml.cs">
+      <DependentUpon>UserGameView.xaml</DependentUpon>
+    </Compile>
     <Page Include="Views\AddGameView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -139,6 +142,10 @@
     <Page Include="Views\UpdateorDeleteView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UserGameView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -170,11 +177,6 @@
   <ItemGroup>
     <Resource Include="Images\default.jpg" />
     <Resource Include="Images\icon.png" />
-    <Resource Include="Images\ifyourereadingthisitstoolate.jpg" />
-    <Resource Include="Images\indefenseofthegenre.jpg" />
-    <Resource Include="Images\ineveningair.jpg" />
-    <Resource Include="Images\picaresque.jpg" />
-    <Resource Include="Images\youregonnamissitall.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
