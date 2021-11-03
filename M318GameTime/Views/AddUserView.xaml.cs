@@ -14,5 +14,10 @@ namespace M318GameTime.Views
             AddUserViewModel viewModel = new AddUserViewModel();
             this.DataContext = viewModel;
         }
+
+        private void addUserBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
