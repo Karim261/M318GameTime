@@ -7,10 +7,10 @@
         ResizeMode="CanMinimize" >
     <Window.DataContext>
         <local:MainWindowViewModel   />
-        
+
     </Window.DataContext>
     <Grid Name="MainMenu">
-        <StackPanel>
+        <StackPanel Margin="-114,0,-130,0">
             <TextBlock Margin="10"
                        HorizontalAlignment="Center"
                        FontSize="20"
@@ -19,26 +19,26 @@
                        HorizontalAlignment="Center"
                        Text="Play More ..." />
             <Button x:Name="AddWindowBtn"
-                    Width="145"
-                    Margin="337,10,312,10"
+                    Width="168"
+                    Margin="459,10,411,10"
                     HorizontalAlignment="Center"
                     Content="Add to Game Collection" 
                     Command="{Binding OpenAddCommand}" Click="AddWindowBtn_Click"/>
             <Button x:Name="ViewWindowBtn"
-                    Width="145"
-                    Margin="337,10,312,10"
+                    Width="168"
+                    Margin="459,10,411,10"
                     HorizontalAlignment="Center"
                     Content="View Game Collection"
                     Command="{Binding OpenViewCommand}"/>
             <Button x:Name="AddUserWindowBtn"
-                Width="145"
-                Margin="337,10,312,10"
+                Width="168"
+                Margin="459,10,411,10"
                 HorizontalAlignment="Center"
                 Content="Add to User Collection" 
                 Command="{Binding OpenAddUserCommand}" />
             <Button x:Name="ViewUserWindowBtn"
-                Width="145"
-                Margin="337,10,312,10"
+                Width="168"
+                Margin="459,10,411,10"
                 HorizontalAlignment="Center"
                 Content="View User Collection"
                 Command="{Binding OpenViewUserCommand}" Click="ViewUserWindowBtn_Click"/>
