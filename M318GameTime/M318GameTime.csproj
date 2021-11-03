@@ -206,9 +206,6 @@
     <Resource Include="Images\fifa22.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\images.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\LOTR.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +222,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\Images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\default1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
