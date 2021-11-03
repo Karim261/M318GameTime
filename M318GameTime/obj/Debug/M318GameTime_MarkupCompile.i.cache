@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\App.xaml
-61234882616
+7-101800098
 
-50-748580429
+51338807867
 13-1505183044
-Views\AddGameView.xaml;Views\AddUserView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;Views\UpdateorDeleteUserView.xaml;Views\UpdateorDeleteView.xaml;
+Views\AddGameView.xaml;Views\AddUserView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;Views\UpdateorDeleteUserView.xaml;Views\UpdateorDeleteView.xaml;Views\UserGameView.xaml;
 
-False
+True
 

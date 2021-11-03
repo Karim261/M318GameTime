@@ -1,4 +1,5 @@
 ﻿using M318GameTime.ViewModels;
+using M318GameTime.Views;
 using System.Windows;
 
 namespace M318GameTime
@@ -20,6 +21,7 @@ namespace M318GameTime
             MainWindowViewModel viewModel = new MainWindowViewModel();
 
             this.DataContext = viewModel;
+            
         }
 
         private void AddWindowBtn_Click(object sender, RoutedEventArgs e)
@@ -30,6 +32,12 @@ namespace M318GameTime
         private void ViewUserWindowBtn_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void AddRelationsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            UserGameView v = new UserGameView();
+            v.Show();
         }
     }
 }

@@ -6,38 +6,17 @@ using System.Windows.Input;
 
 namespace M318GameTime.Commands
 {
-    /// <summary>
-    /// Browse for a new file when updating the game cover path
-    /// </summary>
-    /// <seealso cref="System.Windows.Input.ICommand" />
     public class BrowseUpdateJeuxImageCommand : ICommand
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="BrowseUpdateJeuxImageCommand"/> class.
-        /// </summary>
-        public BrowseUpdateJeuxImageCommand()
+    public BrowseUpdateJeuxImageCommand()
         {
 
         }
 
-        /// <summary>
-        /// Defines the method that determines whether the command can execute in its current state.
-        /// </summary>
-        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
-        /// <returns>
-        /// true if this command can be executed; otherwise, false.
-        /// </returns>
         public bool CanExecute(object parameter)
         {
             return true;
         }
-
-        /// <summary>
-        /// Defines the method to be called when the command is invoked.
-        /// New game (newGame) is created that contains existing game name, existing artist name, and the newly set game cover path. newGame is added
-        /// to the ObservableCollection and old game SelectedItem is removed. ComboBox SelectedItem is then set to newGame to change focus.
-        /// </summary>
-        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
         public void Execute(object parameter)
         {
             if (App.Controller.SelectedItem == null)
@@ -72,8 +51,7 @@ namespace M318GameTime.Commands
 
         public event EventHandler GameAdded;
 
-#pragma warning disable 67
         public event EventHandler CanExecuteChanged;
-#pragma warning restore 67
+
     }
 }

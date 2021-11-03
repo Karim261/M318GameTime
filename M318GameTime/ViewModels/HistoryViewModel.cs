@@ -13,17 +13,13 @@ namespace M318GameTime.ViewModels
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        /**
-         * Constructeur qui instancie la liste 
-         * **/
+       
         public HistoryViewModel()
         {
             Histories = new ObservableCollection<History>();
         }
 
-        /**
-         * Récupére l'historique de jeux en fonction de l'utilisateur
-         * **/
+       
         public List<History> getHistories(User user)
         {
             List<History> myTest = new List<History>();
@@ -37,9 +33,6 @@ namespace M318GameTime.ViewModels
             return myTest;
         }
 
-        /**
-         * Ajoute un jeux avec son user et son jeu
-         * **/
         public void AddGame(User user, Game game)
         {
             Histories.Add(new History
@@ -50,36 +43,27 @@ namespace M318GameTime.ViewModels
             });
         }
 
-        /**
-         * Set JeuxEnCours le jeu
-         * **/
+      
         public void SetJeuxEnCours(History history)
         {
             int i = Histories.IndexOf(history);
             Histories[i].EtatJeu = EtatJeu.JeuxEnCours;
         }
 
-        /**
-         * Set JeuxTermine le jeu
-         * **/
+      
         public void SetJeuxTermine(History history)
         {
             int i = Histories.IndexOf(history);
             Histories[i].EtatJeu = EtatJeu.JeuxTermine;
         }
 
-        /**
-         * Set JeuxEnAttente le jeu
-         * **/
         public void SetJeuxEnAttente(History history)
         {
             int i = Histories.IndexOf(history);
             Histories[i].EtatJeu = EtatJeu.JeuxEnAttente;
         }
 
-        /**
-         * Update les jeux lier à l'utilisateur quand une modification arrive
-         * **/
+        
         public void UpdateGameAll(Game SelectedGame, Game UpdatedGame)
         {
             int i = 0;
@@ -92,8 +76,5 @@ namespace M318GameTime.ViewModels
                 i++;
             }
         }
-
-
     }
-
 }

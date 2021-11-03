@@ -24,5 +24,10 @@ namespace M318GameTime.Views
         {
 
         }
+
+        private void ComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

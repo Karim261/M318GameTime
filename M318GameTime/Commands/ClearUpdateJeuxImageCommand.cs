@@ -5,29 +5,18 @@ using System.Windows.Input;
 
 namespace M318GameTime.Commands
 {
-    /// <summary>
-    /// Clears the selected game art.
-    /// </summary>
-    /// <seealso cref="System.Windows.Input.ICommand" />
+    
     public class ClearUpdateJeuxImageCommand : ICommand, IDisposable
     {
         public event EventHandler CanExecuteChanged;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ClearUpdateJeuxImageCommand"/> class.
-        /// </summary>
+     
         public ClearUpdateJeuxImageCommand()
         {
             App.Controller.PropertyChanged += onControllerPropertyChanged;
         }
 
-        /// <summary>
-        /// Defines the method that determines whether the command can execute in its current state.
-        /// </summary>
-        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
-        /// <returns>
-        /// true if this command can be executed; otherwise, false.
-        /// </returns>
+        
         public bool CanExecute(object parameter)
         {
             if (App.Controller.SelectedItem.JeuxImage == MainViewModel.defaultJeuxImage)
