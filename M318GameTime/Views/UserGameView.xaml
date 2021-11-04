@@ -7,13 +7,22 @@
         mc:Ignorable="d"
         Title="UserGameView" Height="450" Width="800">
     <Grid>
-
+		
+		<Label Grid.Column="0"
+					   Grid.Row="1"
+					   Margin="10"
+					   Content="Select to View:" Grid.ColumnSpan="2" />
+		
+		<Label Grid.Column="0"
+               Grid.Row="2"
+               Margin="10"
+               Content="Pseudo:" Grid.ColumnSpan="2" />
+		
 		<ComboBox Name="gameComboBox"
                   Grid.Column="2"
                   Grid.Row="1"
                   Margin="30,45,459,343"
                   ItemsSource="{Binding Name, ElementName=gameComboBox}"
-                  SelectedItem="{Binding Path=SelectedItem, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                   IsSynchronizedWithCurrentItem="True"
                   SelectedIndex="0"
                   DisplayMemberPath="JeuxNom" />

@@ -9,8 +9,8 @@ namespace M318GameTime.Views
     public partial class AddUserView : Window
     {
 
-        List<string> nomLog = new List<string>();
-        List<string> MDPLog = new List<string>();
+        static List<string> nomLog = new List<string>();
+        static List<string> MDPLog = new List<string>();
 
       
         public AddUserView()
@@ -29,14 +29,14 @@ namespace M318GameTime.Views
             nomLog.Add(Pseudo);
             MDPLog.Add(MDP);
         }
-                public List<string> GetList()
-    {
-        return nomLog;
-    }
+        public List<string> GetList()
+        {
+            return nomLog;
+        }
 
         public List<string> GetList2()
-    {
-        return MDPLog;
-    }
+        {
+            return MDPLog;
+        }
     }
 }

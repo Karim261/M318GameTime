@@ -31,6 +31,7 @@ namespace M318GameTime.Views
         private void goToMainWindowBtn_Click(object sender, RoutedEventArgs e)
         {
             string test = ProfiPasseTextBox.Text;
+            string test2 = ProfilsMotPasseTextBox.Text;
 
             MainWindow window = new MainWindow();
 
@@ -46,7 +47,7 @@ namespace M318GameTime.Views
                 window.Show();
             }
 
-            else if (calledList1.Contains(test) == true)
+            else if (calledList1.Any(o => o == test) && calledList2.Any(k => k == test2))
             {
                 window.Show();
             }
