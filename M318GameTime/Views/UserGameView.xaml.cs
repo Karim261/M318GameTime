@@ -15,9 +15,7 @@ using M318GameTime.ViewModels;
 
 namespace M318GameTime.Views
 {
-    /// <summary>
-    /// Interaction logic for UserGameView.xaml
-    /// </summary>
+  
     public partial class UserGameView : Window
     {
         public UserGameView()

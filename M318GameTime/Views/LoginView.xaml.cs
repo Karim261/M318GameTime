@@ -17,9 +17,6 @@ using M318GameTime.Models;
 
 namespace M318GameTime.Views
 {
-    /// <summary>
-    /// Interaction logic for LoginView.xaml
-    /// </summary>
     public partial class LoginView : Window
     {
         public LoginView()
@@ -33,24 +30,34 @@ namespace M318GameTime.Views
 
         private void goToMainWindowBtn_Click(object sender, RoutedEventArgs e)
         {
-            var test = ProfiPasseTextBox.Text;
+            string test = ProfiPasseTextBox.Text;
 
-            UserLibrary ul = new UserLibrary();
-            List<User> calledList = ul.GetList().ToList();
+            MainWindow window = new MainWindow();
+
+            AddUserView ul = new AddUserView();
+            
+            List<String> calledList1 = ul.GetList();
+            List<String> calledList2 = ul.GetList2();
+            
 
             
 
             if ("admin" == ProfiPasseTextBox.Text && "admin" == ProfilsMotPasseTextBox.Text) { 
-                MainWindow window = new MainWindow();
                 window.Show();
             }
-            
+
+            else if (calledList1.Contains(test) == true)
+            {
+                window.Show();
+            }
+
             else
             {
-                string message = "Simple MessageBox";
-                string title = "Title";
+                string message = "Identifian ou mot de passe incorrect";
+                string title = "Erreur";
                 MessageBox.Show(message, title);
             }
+
         }
     }
 }
