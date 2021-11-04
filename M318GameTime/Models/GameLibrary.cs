@@ -30,7 +30,6 @@ namespace M318GameTime.Models
             }
         }
 
-      
         public void LoadGames()
         {
             GamesCollection.Add(new Game("Hitman", "Nice Game", "/M318GameTime;component/Images/hitman.png", "01/04/2021", "Action", "18+", "Xbox", "English"));

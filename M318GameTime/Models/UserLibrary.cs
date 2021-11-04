@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Xml.Serialization;
@@ -29,9 +30,9 @@ namespace M318GameTime.Models
 
         public void LoadUsers()
         {
-            UsersCollection.Add(new User("admin", "T", "Reza", "11.11.1988", "xxx@gmail.com", "admin"));
-            UsersCollection.Add(new User("User2", "H", "Karim", "2009, 1, 16", "yyy@gmail.com", "admin"));
-            UsersCollection.Add(new User("User3", "X", "C", "11.11.2020", "zzz@gmail.com", "admin"));
+            UsersCollection.Add(new User("admin", "T", "Reza", "01/04/2000", "xxx@gmail.com", "admin"));
+            UsersCollection.Add(new User("User2", "H", "Karim", "01/04/2002", "yyy@gmail.com", "admin"));
+            UsersCollection.Add(new User("User3", "X", "C", "01/04/1989", "zzz@gmail.com", "admin"));
 
         }
 
@@ -50,7 +51,7 @@ namespace M318GameTime.Models
             else
             {
                 LoadUsers();
-        }
+            }
     }
 
         public void Save()

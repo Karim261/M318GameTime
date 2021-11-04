@@ -77,3 +77,4 @@ C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\obj\Debug\M318GameTime.
 C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\obj\Debug\M318GameTime.csproj.CoreCompileInputs.cache
 C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\obj\Debug\M318GameTime.exe
 C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\obj\Debug\M318GameTime.pdb
+C:\Users\Reza\Documents\GitHub\M318GameTime\M318GameTime\obj\Debug\M318GameTime.csproj.AssemblyReference.cache
