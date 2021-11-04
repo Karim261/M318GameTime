@@ -3,25 +3,41 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:M318GameTime.Views"
+		xmlns:local="clr-namespace:M318GameTime.ViewModels"
         mc:Ignorable="d"
         Title="UserGameView" Height="450" Width="800">
     <Grid>
-        <ComboBox Name="gameComboBox"
+		
+		<Label Grid.Column="0"
+					   Grid.Row="1"
+					   Margin="10"
+					   Content="Select to View:" Grid.ColumnSpan="2" />
+		
+		<Label Grid.Column="0"
+               Grid.Row="2"
+               Margin="10"
+               Content="Pseudo:" Grid.ColumnSpan="2" />
+		
+		<ComboBox Name="gameComboBox"
+                  Grid.Column="2"
+                  Grid.Row="1"
                   Margin="30,45,459,343"
                   ItemsSource="{Binding Name, ElementName=gameComboBox}"
-                  SelectedItem="{Binding Path=SelectedItem, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                   IsSynchronizedWithCurrentItem="True"
                   SelectedIndex="0"
                   DisplayMemberPath="JeuxNom" />
 
-        <ComboBox Name="userComboBox"
+
+		<ComboBox Name="userComboBox"
+                  Grid.Column="2"
+                  Grid.Row="1"
                   Margin="30,135,459,249"
                   ItemsSource="{Binding Path=NewUsersCollection}"
                   SelectedItem="{Binding Path=SelectedUser, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                   IsSynchronizedWithCurrentItem="True"
                   SelectedIndex="0"
                   DisplayMemberPath="ProfilsPseudo" />
+        
         <Button Content="Ok" HorizontalAlignment="Left" Margin="30,245,0,0" VerticalAlignment="Top" Width="149" Height="60" Click="Button_Click"/>
         <ListView HorizontalAlignment="Left" Height="320" Margin="434,45,0,0" VerticalAlignment="Top" Width="330" SelectionChanged="ListView_SelectionChanged">
             <ListView.View>

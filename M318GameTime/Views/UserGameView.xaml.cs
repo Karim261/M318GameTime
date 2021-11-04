@@ -10,7 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using System.Windows;
 using M318GameTime.ViewModels;
 
 namespace M318GameTime.Views
@@ -22,7 +22,6 @@ namespace M318GameTime.Views
         {
             InitializeComponent();
         }
-        HistoryViewModel h = new HistoryViewModel();
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
