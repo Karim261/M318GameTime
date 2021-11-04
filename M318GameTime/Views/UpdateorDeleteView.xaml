@@ -152,7 +152,7 @@
                     Command="{Binding UpdateJeuxDateCommand}" />
             </Grid>
             <Label Grid.Column="0"
-                Margin="-98,126,322,-106"
+                Margin="-98,126,603,-106"
                 Content="Genre:" />
             <TextBox x:Name="JeuxGenreTextBox"
                 Margin="31,132,178,-82"

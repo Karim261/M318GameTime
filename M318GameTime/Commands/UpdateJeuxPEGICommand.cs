@@ -45,7 +45,7 @@ namespace M318GameTime.Commands
 
         private void onControllerPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if (e.PropertyName == "UpdatedUpdated")
+            if (e.PropertyName == "UpdatedJeuxPEGI")
             {
                 if (CanExecuteChanged != null)
                 {

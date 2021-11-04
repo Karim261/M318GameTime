@@ -8,7 +8,7 @@ namespace M318GameTime.Models
 
     public class GameLibrary
     {
-        private string userLibraryFileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "UserLibrary_M318GameTime.xml");
+        private string gameLibraryFileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "GameLibrary_M318GameTime.xml");
 
         #region GameLibrary Constructor
 
@@ -33,38 +33,38 @@ namespace M318GameTime.Models
       
         public void LoadGames()
         {
-            GamesCollection.Add(new Game("Hitman", "Nice Game", "/M318GameTime;component/Images/hitman.png", "22.01.22", "Action", "18+", "Xbox", "English"));
-            GamesCollection.Add(new Game("Mario", "Nice Game", "/M318GameTime;component/Images/mario.jpg", "22.01.22", "Action", "7+", "Nintendo", "English"));
-            GamesCollection.Add(new Game("Call of duty", "Nice Game", "/M318GameTime;component/Images/call_of_duty_modern_warfare.png", "22.01.22", "English", "16+", "PS", "English"));
-            GamesCollection.Add(new Game("Lord of Rings", "Nice Game", "/M318GameTime;component/Images/LOTR.jpg", "22.01.22", "Action", "12+", "PC", "English"));
-            GamesCollection.Add(new Game("Fifa 22", "Nice Game", "/M318GameTime;component/Images/fifa22.jpg", "22.01.22", "Sport", "7+", "PS", "English"));
+            GamesCollection.Add(new Game("Hitman", "Nice Game", "/M318GameTime;component/Images/hitman.png", "01/04/2021", "Action", "18+", "Xbox", "English"));
+            GamesCollection.Add(new Game("Mario", "Nice Game", "/M318GameTime;component/Images/mario.jpg", "04/11/2020", "Action", "7+", "Nintendo", "English"));
+            GamesCollection.Add(new Game("Call of duty", "Nice Game", "/M318GameTime;component/Images/call_of_duty_modern_warfare.png", "07/01/2021", "English", "16+", "PS", "English"));
+            GamesCollection.Add(new Game("Lord of Rings", "Nice Game", "/M318GameTime;component/Images/LOTR.jpg", "09/08/2018", "Action", "12+", "PC", "English"));
+            GamesCollection.Add(new Game("Fifa 22", "Nice Game", "/M318GameTime;component/Images/fifa22.jpg", "03/01/2020", "Sport", "7+", "PS", "English"));
         }
 
         
         public void Load()
         {
-            //if (File.Exists(userLibraryFileName))
-            //{
-            //    XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Game>));
+            if (File.Exists(gameLibraryFileName))
+            {
+                XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Game>));
 
-            //    using (StreamReader reader = new StreamReader(userLibraryFileName))
-            //    {
-            //        this.gamesCollection = (ObservableCollection<Game>)xs.Deserialize(reader);
-            //    }
-            //}
+                using (StreamReader reader = new StreamReader(gameLibraryFileName))
+                {
+                    this.gamesCollection = (ObservableCollection<Game>)xs.Deserialize(reader);
+                }
+            }
 
-            //else
-            //{
+            else
+            {
                 LoadGames();
-            //}
         }
+    }
 
        
         public void Save()
         {
             XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Game>));
 
-            using (StreamWriter writer = new StreamWriter(userLibraryFileName))
+            using (StreamWriter writer = new StreamWriter(gameLibraryFileName))
             {
                 xs.Serialize(writer, this.gamesCollection);
             }

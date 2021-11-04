@@ -37,21 +37,21 @@ namespace M318GameTime.Models
 
         public void Load()
         {
-            //if (File.Exists(userLibraryFileName))
-            //{
-            //    XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<User>));
+            if (File.Exists(userLibraryFileName))
+            {
+                XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<User>));
 
-            //    using (StreamReader reader = new StreamReader(userLibraryFileName))
-            //    {
-            //        this.usersCollection = (ObservableCollection<User>)xs.Deserialize(reader);
-            //    }
-            //}
+                using (StreamReader reader = new StreamReader(userLibraryFileName))
+                {
+                    this.usersCollection = (ObservableCollection<User>)xs.Deserialize(reader);
+                }
+            }
 
-            //else
-            //{
+            else
+            {
                 LoadUsers();
-            //}
         }
+    }
 
         public void Save()
         {

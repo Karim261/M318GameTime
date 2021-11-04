@@ -142,7 +142,7 @@ namespace M318GameTime.ViewModels
             set
             {
                 App.Controller.NewJeuxDate = value;
-                //this.NotifyPropertyChanged("NewJeuxDate");
+                this.NotifyPropertyChanged("NewJeuxDate");
             }
         }
 
