@@ -33,21 +33,11 @@ namespace M318GameTime.Views
             string test = ProfiPasseTextBox.Text;
 
             MainWindow window = new MainWindow();
-
-            AddUserView ul = new AddUserView();
-            
-            List<String> calledList1 = ul.GetList();
-            List<String> calledList2 = ul.GetList2();
             
 
             
 
             if ("admin" == ProfiPasseTextBox.Text && "admin" == ProfilsMotPasseTextBox.Text) { 
-                window.Show();
-            }
-
-            else if (calledList1.Contains(test) == true)
-            {
                 window.Show();
             }
 
