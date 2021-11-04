@@ -53,7 +53,7 @@ namespace M318GameTime.Views
 
             else
             {
-                string message = "Identifian ou mot de passe incorrect";
+                string message = "Your username or password is wrong! (try admin)";
                 string title = "Erreur";
                 MessageBox.Show(message, title);
             }
